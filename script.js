@@ -65,10 +65,10 @@ function setToLIst() {
 
   items[0].innerHTML = "";
   const item = JSON.parse(localStorage.getItem("todo"));
-    total_todos[0].innerHTML =  `${item.length} items left`
-
-
+  
+  
   if (item) {
+    total_todos[0].innerHTML =  `${item.length} items left`
     for (let i = 0; i < item.length; i++) {
       items[0].innerHTML += ` <div draggable="true" class="item">
         <div class="check">
