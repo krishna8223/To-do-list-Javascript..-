@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Todo app</title>
+
+    <
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div class="background"></div>
+
+    <div class="nav">
+      <h2>TODO</h2>
+      <img
+        onclick="change_mode()"
+        src="./images/icon-sun.svg"
+        alt=""
+        class="mode"
+      />
+    </div>
+
+    <div class="input">
+      <div class="circle"></div>
+      <input type="text" placeholder="Crate a new todo" />
+    </div>
+
+
+    <div class="all_todo">
+      <div class="items"></div>
+
+      <div class="options">
+
+        <p class="total_todos"></p>
+        <div class="item_modify">
+          <p
+            onclick="modify_todos('all_todos')"
+            class="todo_links active_link all_todos"
+          >
+            All
+          </p>
+          <p
+            onclick="modify_todos('active_todos')"
+            class="todo_links active_todos"
+          >
+            Active
+          </p>
+          <p
+            onclick="modify_todos('completed_todos')"
+            class="todo_links completed_todos"
+          >
+            Completed
+          </p>
+        </div>
+        <p
+          onclick="modify_todos('clear_completed_todos')"
+          class="Clear_completed"
+        >
+          Clear Completed
+        </p>
+      </div>
+    </div>
+
+    <!-- For small screen -->
+
+    <div class="item_modify small">
+      <p
+        onclick="modify_todos('all_todos')"
+        class="todo_links active_link all_todos"
+      >
+        All
+      </p>
+      <p onclick="modify_todos('active_todos')" class="todo_links active_todos">
+        Active
+      </p>
+      <p
+        onclick="modify_todos('completed_todos')"
+        class="todo_links completed_todos"
+      >
+        Completed
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="drag">
+      <p>Drag and drop to reorder list</p>
+    </div>
+    
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/krishna8223" target="_blank">Krishna Verma</a
+      >.
+    </div>
+  </body>
+</html>
