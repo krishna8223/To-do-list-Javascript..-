@@ -17,8 +17,8 @@ input[0].addEventListener("change", (e) => {
 
   const items = JSON.parse(localStorage.getItem("todo"));
 
+  
   if (items) {
-    
     for (let i = 0; i < items.length; i++) {
       if (items[i].item == value) {
         alert('Todo Already available')
@@ -26,8 +26,8 @@ input[0].addEventListener("change", (e) => {
       }
       
     }
+    
   }
-  
 
   if (items) {
     set(value);
