@@ -18,8 +18,7 @@
 .dark{
     --background-color: white;
     --background-image: url('./images/bg-desktop-light.jpg');
-    /* --todo-color:white; */
-    --todo-color:#25273C;
+    --todo-color:white;
     --color:#111;
     --box-shadow: -2px 10px 41px black;
     --border-bottom:#0f0e0e30;
