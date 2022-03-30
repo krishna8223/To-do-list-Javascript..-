@@ -7,8 +7,10 @@
     --box-shadow: -2px 10px 41px black;
     --border-bottom:#8f8f8f66;
     --width:50vw;
+    /* --width:clamp(300px); */
+
     --max-width:500px;
-    --min-width:350px;
+    --min-width:320px;
     
 
     
@@ -16,13 +18,14 @@
 .dark{
     --background-color: white;
     --background-image: url('./images/bg-desktop-light.jpg');
-    --todo-color:white;
+    /* --todo-color:white; */
+    --todo-color:#25273C;
     --color:#111;
     --box-shadow: -2px 10px 41px black;
     --border-bottom:#0f0e0e30;
     --width:50vw;
     --max-width:500px;
-    --min-width:350px;
+    --min-width:320px;
 
 
 
@@ -290,16 +293,6 @@ body{
 }
 
 
-@media(max-width:600px){
-    body{
-        margin-top: 65px;
-    }
-    .nav{
-        margin-bottom: 52px;
-    }
-}
-
-
 .attribution {
     font-size: 20px;
     margin-top: 90px;
@@ -310,4 +303,19 @@ body{
 
   .attribution a {
     color: hsl(180deg 100% 63%);
-  }
+}
+
+
+@media(max-width:600px){
+    body{
+        margin-top: 65px;
+    }
+    .nav{
+        margin-bottom: 52px;
+    }
+    .attribution{
+        font-size:14px ;
+        margin-top: 30px;
+    }
+}
+
